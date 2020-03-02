@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute positioning</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .blue-container {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .yellow-container {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .red-container {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 200px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="yellow-container"></div>
+        <div class="blue-container"></div>
+        <div class="red-container"></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
