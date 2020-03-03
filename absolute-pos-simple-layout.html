@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute positioning - Simple layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            margin: 0 auto;
+            width: 970px;
+        }
+
+        .header {
+            background-color: wheat;
+            height: 100px;
+            position: absolute;
+            width: 750px;
+        }
+
+        .left {
+            background-color: red;
+            position: absolute;
+            height: 400px;
+            left: 0;
+            top: 100px;
+            width: 200px;
+        }
+
+        .right {
+            background-color: yellow;
+            position: absolute;
+            height: 400px;
+            left: 200px;
+            top: 100px;
+            width: 550px;
+        }
+
+        .footer {
+            background-color: gray;
+            position: absolute;
+            height: 200px;
+            top: 500px;
+            width: 750px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="footer"></div>
+    </div>
+
+
+
+</body>
+
+</html>
