@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining selectors</title>
+
+    <style>
+        /*Multiple selectors*/
+        h1,
+        p {
+            color: red;
+        }
+
+        /*------------------*/
+        /*Hierarchical selectors - jobbról balra: parent szülő<----<gyerek child*/
+        .container-h #title {
+            color: blue;
+        }
+        /*Hierarchical selectors - összes h1 a container-h-ban*/
+        .container-h h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /*------------------*/
+        /*Combined selectors - no space! selectoroknak ugyanabban a html element-ben kell lenniük - nincs szülő-gyerek kapcsolat!*/
+        h1#combined {
+            color: green;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Hierarchical selectors - jobbról balra: szülő<------<gyerek-->
+    <div class="container-h">
+        <h1 id="title">Hello</h1>
+
+        <!--Combined selectors-->
+        <h1 id="combined">Combined selector</h1>
+    </div>
+
+</body>
+
+</html>
