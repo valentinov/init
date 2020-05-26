@@ -23,4 +23,4 @@ app.listen(port, function () {
 //Some command
 npm init
 npm i express body-parser
-npm i ejs
+npm i ejs //also have to create views folder
